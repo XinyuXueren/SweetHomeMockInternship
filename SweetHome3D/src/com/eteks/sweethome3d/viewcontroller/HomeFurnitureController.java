@@ -595,14 +595,13 @@ public class HomeFurnitureController implements Controller {
    */
   public boolean isPropertyEditable(Property property) {
     switch (property) {
-      case DESCRIPTION :
-      case PRICE :
+      case PRICE:
         return false;
-      case LIGHT_POWER :
+      case LIGHT_POWER:
         return isLightPowerEditable();
-      case VISIBLE :
+      case VISIBLE:
         return this.visibleEditable;
-      default :
+      default:
         return true;
     }
   }
